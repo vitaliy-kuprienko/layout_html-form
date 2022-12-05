@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, 
@@ -11,26 +10,26 @@
   <script src="/style.e308ff8e.js"></script></head>
 
   <body>
-    <h1>HTML Form</h1>
+    <!-- <h1>HTML Form</h1> -->
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset>
         <legend>Personal information</legend>
-        <div class="form_field">
+        <!-- <div class="form_field"> -->
         Surname:
-          <input type="text" autocomplete="off" name="surname">
-        </div>
+        <input type="text" autocomplete="off" name="surname">
+        <!-- </div> -->
         <div class="form_field">
         Name:
           <input type="text" autocomplete="off" name="name">
         </div>
 
         <div class="form_field">
-        How old are You?:
-          <input type="text" name=" number" value="12" min="1" max="100">
+        How old are You?
+          <input type="number" name="number" value="12" min="1" max="100">
         </div>
         <div class="form_field">
         Full date of birth:
-          <input type="text" autocomplete="off" name="date" placeholder="mm/dd/yyyy">
+          <input type="date" autocomplete="off" name="date" placeholder="дд.мм.гггг">
         </div>
 
         <div class="form_field">
@@ -42,10 +41,10 @@
 
       <fieldset>
         <legend>Registration</legend>
-        <div class="form_field">
+        <!-- <div class="form_field"> -->
         E-mail:
-          <input type="email" autocomplete="off" name="email" placeholder="email@example.com">
-        </div>
+        <input type="email" autocomplete="off" name="email" placeholder="email@example.com">
+        <!-- </div> -->
 
         <div class="form_field">
         Password:
@@ -55,21 +54,21 @@
 
       <fieldset>
         <legend>An interesting fact about you!</legend>
-        <div class="form_field">
+        <!-- <div class="form_field"> -->
         Do you love cats?
-          <label>
-            <input type="radio" name="fact-about-you">
+        <label>
+          <input type="radio" name="fact-about-you">
         Yes
-          </label>
+        </label>
 
-          <label>
-            <input type="radio" name="factAboutYou">
+        <label>
+          <input type="radio" name="factAboutYou">
         No
-          </label>
-        </div>
+        </label>
+        <!-- </div> -->
 
         <div class="form_field">
-        What is your favorite colorr?
+        What is your favorite color?
           <input type="color" name="favoriteColorr">
         </div>
 
@@ -80,10 +79,10 @@
 
         <div class="form_field">
         What are your favorite brand of cars?
-          <select name="cars">
-            <option value="Lada">Lada</option>
-            <option value="Audi">Audi</option>
+          <select name="cars" multiple="">
             <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
           </select>
         </div>
 
@@ -96,11 +95,14 @@
 
       <fieldset>
         <legend>Additional info:</legend>
-      Coments:
+      Comments:
         <textarea name="coments"></textarea>
         <div class="form_field">
-        Would youo recommend us?
-          <input type="number" autocomplete="off">
+        Would you recommend us?
+          <select name="recommend">
+            <option value="yes"> yes</option>
+            <option value="no">no</option>
+          </select>
         </div>
       
       </fieldset>
