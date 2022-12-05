@@ -1,19 +1,7 @@
-/* .blok {
-    border: 1px solid rgb(131, 130, 130);
-    margin-top: 20px; */
-
 fieldset {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .form_field {
   margin-top: 10px;
 }
-
-button {
-  margin-top: 20px;
-}
-/* 
-p {
-    margin-top: -11px;
-} */
